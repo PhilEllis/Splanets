@@ -5,7 +5,10 @@ Fonts
 /*---------------------------
 General styling
 ---------------------------*/
-
+body {
+    margin: 0;
+    padding: 0;
+}
 /*----------------------------
 Header
 ----------------------------*/
@@ -19,6 +22,24 @@ Hero
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+#hero .intro-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.welcome-card {
+    background: linear-gradient(rgba(252, 221, 140, 1), rgba(250, 212, 136, 1));
+    max-width: 600px;
+    border-radius: 30px;
 }
 /*----------------------------
 Video
