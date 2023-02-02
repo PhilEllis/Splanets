@@ -25,16 +25,20 @@ Header - Nav
 }
 
 .navbar-toggler {
-    color: aqua;
+    color: #4fb2e5;
+}
+
+.logo {
+    margin-left: ;
 }
 /*----------------------------
 Hero
 ----------------------------*/
 
 #hero .intro-container {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    top: 0;
+    top: 100px;
     left: 0;
     right: 0;
     display: flex;
