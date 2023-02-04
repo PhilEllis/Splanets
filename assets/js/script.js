@@ -2,101 +2,112 @@ var spQuestions = [
     {
         question: "What planet is closest to the Sun?",
         answers: {
-			a: 'Venus',
-			b: 'Mercury',
-			c: 'Mars',
-            d: 'Earth'
+			a: 'venus',
+			b: 'mercury',
+			c: 'mars',
+            d: 'earth'
 		},
 		correctAnswer: 'b'
 	},
     {
 		question: "Which planet has the highest mountain in our solar system, a volcano named Olympus Mons?",
 		answers: {
-			a: 'Mars',
-			b: 'Jupiter',
-			c: 'Neptune',
-			d: 'Earth'
+			a: 'mars',
+			b: 'jupiter',
+			c: 'neptune',
+			d: 'earth'
 		},
 		correctAnswer: 'a'
 	},
 	{
 		question: "Which planet has organic life?",
 		answers: {
-			a: 'Saturn',
-			b: 'Mars',
-			c: 'Earth',
-			d: 'Uranus'
+			a: 'saturn',
+			b: 'mars',
+			c: 'earth',
+			d: 'uranus'
 		},
 		correctAnswer: 'c'
 	},
 	{
 		question: "Which planet is the brightest in our solar system?",
 		answers: {
-			a: 'Mars,
-			b: 'Neptune',
-			c: 'Saturn',
-			d: 'Venus''
+			a: 'mars',
+			b: 'neptune',
+			c: 'saturn',
+			d: 'venus'
 		},
 		correctAnswer: 'd'
 	},
 	{
 		question: "Which planet is Nicknamed the Icy planet as it is the coldest one?",
 		answers: {
-			a: 'Neptune',
-			b: 'Saturn',
-			c: 'Uranus',
-			d: 'Mars'
+			a: 'neptune',
+			b: 'saturn',
+			c: 'uranus',
+			d: 'mars'
 		},
 		correctAnswer: 'c'
 	},
 	{
 		question: "Which planet is 5th from the sun and the biggest in our solar system?",
 		answers: {
-			a: 'Saturn',
-			b: 'Mars',
-			c: 'Mercury',
-			d: 'Jupiter'
+			a: 'saturn',
+			b: 'mars',
+			c: 'mercury',
+			d: 'jupiter'
 		},
 		correctAnswer: 'd'
 	},
 	{
 		question: "Which planet is the smallest planet?",
 		answers: {
-			a: 'Mercury',
-			b: 'Earth',
-			c: 'Neptune',
-			d: 'Jupiter'
+			a: 'mercury',
+			b: 'earth',
+			c: 'neptune',
+			d: 'jupiter'
 		},
 		correctAnswer: 'a'
 	},
 	{
 		question: "Which planet has outer rings made of dust and ice chunks?",
 		answers: {
-			a: 'Venus',
-			b: 'Saturn',
-			c: 'Uranus',
-			d: 'Jupiter'
+			a: 'venus',
+			b: 'saturn',
+			c: 'uranus',
+			d: 'jupiter'
 		},
 		correctAnswer: 'b'
 	},
 	{
 		question: "Which planet is the hottest planet?",
 		answers: {
-			a: 'Mercury',
-			b: 'Mars',
-			c: 'Venus',
-			d: 'Jupiter'
+			a: 'mercury',
+			b: 'mars',
+			c: 'venus',
+			d: 'jupiter'
 		},
 		correctAnswer: 'c'
 	},
 	{
 		question: "Which planet is furthest from the sun?",
 		answers: {
-			a: 'Neptune',
-			b: 'Saturn',
-			c: 'Uranus',
-			d: 'Mercury'
+			a: 'neptune',
+			b: 'saturn',
+			c: 'uranus',
+			d: 'mercury'
 		},
 		correctAnswer: 'a'
 	},
 ];
+
+var images = {
+	'mercury' : 'mercury.png',
+	'venus' : 'venus.png',
+	'earth' : 'earth.png',
+	'mars' : 'mars.png',
+	'jupiter' : 'jupiter.png',
+	'saturn' : 'saturn.png',
+	'uranus' : 'uranus.png',
+	'neptune' : 'neptune.png'
+}
