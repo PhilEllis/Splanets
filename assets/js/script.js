@@ -3,100 +3,100 @@ let spQuiz = [
     {
         question: "What planet is closest to the Sun?",
         answers: [
-			"assests/img/venus.png",
-			"assests/img/mercury.png",
-			"assests/img/mars.png",
-			"assests/img/earth.png"
+			"../img/venus.png",
+			"../img/mercury.png",
+			"../img/mars.png",
+			"../img/earth.png"
 		],
 		correctAnswer: '1'
 	},
     {
 		question: "Which planet has the highest mountain in our solar system, a volcano named Olympus Mons?",
 		answers: [
-			"assests/img/mars.png",
-			"assests/img/jupiter.png",
-			"assests/img/neptune.png",
-			"assests/img/earth.png"
+			"../img/mars.png",
+			"../img/jupiter.png",
+			"../img/neptune.png",
+			"../img/earth.png"
 		],
 		correctAnswer: '0'
 	},
 	{
 		question: "Which planet has organic life?",
 		answers: [
-			"assests/img/saturn.png",
-			"assests/img/mars.png",
-			"assests/img/earth.png",
-			"assests/img/uranus.png"
+			"../img/saturn.png",
+			"../img/mars.png",
+			"../img/earth.png",
+			"../img/uranus.png"
 		],
 		correctAnswer: '2'
 	},
 	{
 		question: "Which planet is the brightest in our solar system?",
 		answers: [
-			"assests/img/mars.png",
-			"assests/img/neptune.png",
-			"assests/img/saturn.png",
-			"assests/img/venus.png"
+			"../img/mars.png",
+			"../img/neptune.png",
+			"../img/saturn.png",
+			"../img/venus.png"
 		],
 		correctAnswer: '3'
 	},
 	{
 		question: "Which planet is Nicknamed the Icy planet as it is the coldest one?",
 		answers: [
-			"assests/img/neptune.png",
-			"assests/img/saturn.png",
-			"assests/img/uranus.png",
-			"assests/img/mars.png"
+			"../img/neptune.png",
+			"../img/saturn.png",
+			"../img/uranus.png",
+			"../img/mars.png"
 		],
 		correctAnswer: '2'
 	},
 	{
 		question: "Which planet is 5th from the sun and the biggest in our solar system?",
 		answers: [
-			"assests/img/saturn.png",
-			"assests/img/mars.png",
-			"assests/img/mercury.png",
-			"assests/img/jupiter.png"
+			"../img/saturn.png",
+			"../img/mars.png",
+			"../img/mercury.png",
+			"../img/jupiter.png"
 		],
 		correctAnswer: '3'
 	},
 	{
 		question: "Which planet is the smallest planet?",
 		answers: [
-			"assests/img/mercury.png",
-			"assests/img/earth.png",
-			"assests/img/neptune.png",
-			"assests/img/jupiter.png"
+			"../img/mercury.png",
+			"../img/earth.png",
+			"../img/neptune.png",
+			"../img/jupiter.png"
 		],
 		correctAnswer: '0'
 	},
 	{
 		question: "Which planet has outer rings made of dust and ice chunks?",
 		answers: [
-			"assests/img/venus.png",
-			"assests/img/saturn.png",
-			"assests/img/uranus.png",
-			"assests/img/jupiter.png"
+			"../img/venus.png",
+			"../img/saturn.png",
+			"../img/uranus.png",
+			"../img/jupiter.png"
 		],
 		correctAnswer: '1'
 	},
 	{
 		question: "Which planet is the hottest planet?",
 		answers: [
-			"assests/img/mercury.png",
-			"assests/img/mars.png",
-			"assests/img/venus.png",
-			"assests/img/jupiter.png"
+			"../img/mercury.png",
+			"../img/mars.png",
+			"../img/venus.png",
+			"../img/jupiter.png"
 		],
 		correctAnswer: '2'
 	},
 	{
 		question: "Which planet is furthest from the sun?",
 		answers: [
-			"assests/img/neptune.png",
-			"assests/img/saturn.png",
-			"assests/img/uranus.png",
-			"assests/img/mercury.png"
+			"../img/neptune.png",
+			"../img/saturn.png",
+			"../img/uranus.png",
+			"../img/mercury.png"
 		],
 		correctAnswer: '0'
 	},
@@ -118,3 +118,18 @@ function displayQuestion () {
 		document.getElementById("answer-btns").appendChild(img);
 	} 
 }
+
+//Next button
+
+//Results Restart or Launch Rocket
+
+//Call Quiz
+
+displayQuestion();
+//Progress Bar
+
+//Event listen on clicks to keep it enlarged
+
+//Disable submit on video & replace video with quiz
+
+
