@@ -1,3 +1,4 @@
+// Splanets Quiz Questions, answers options, correct answer and image links 
 let spQuiz = [
     {
         question: "What planet is closest to the Sun?",
@@ -56,7 +57,7 @@ let spQuiz = [
 			"assests/img/mars.png",
 			"assests/img/mercury.png",
 			"assests/img/jupiter.png"
-		},
+		],
 		correctAnswer: '3'
 	},
 	{
@@ -100,3 +101,20 @@ let spQuiz = [
 		correctAnswer: '0'
 	},
 ];
+
+// Function to show Question and possible answers
+let newQuestion = 0;
+function displayQuestion () {
+	let question = spQuiz[newQuestion];
+	document.getElementById("question-text").innerHTML = question.question;
+	let answers = question.answers;
+	for (let i = 0; i < answers.length; i++) {
+		let answer = answers[i];
+		let img = document.createElement("img");
+		img.src = answers;
+		img.onclick = function() {
+			checkAnswer(i);
+		};
+		document.getElementById("answer-btns").appendChild(img);
+	} 
+}
