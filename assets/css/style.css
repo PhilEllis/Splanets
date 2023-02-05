@@ -20,16 +20,20 @@ body {
 /*----------------------------
 Header - Nav
 ----------------------------*/
-.toggler-colour .navbar-toggler {
-    border-color: rgb(255,102,203);
-}
 
+.navbar-toggler-icon {
+    color: #4fb2e5;
+}
 .navbar-toggler {
+    color: #4fb2e5;
+}
+.navbar-toggler-icon {
     color: #4fb2e5;
 }
 
 .logo {
-    margin-left: ;
+    transform: translate(-40px);
+    max-height: 130px;
 }
 /*----------------------------
 Hero
@@ -47,11 +51,6 @@ Hero
     text-align: center;
   }
 
-.welcome-card {
-    background: linear-gradient(rgba(253, 230, 147, 1), rgba(252, 221, 140, 1), rgba(250, 212, 136, 1));
-    max-width: 600px;
-    border-radius: 30px;
-}
 /*----------------------------
 Video
 ----------------------------*/
@@ -67,7 +66,32 @@ Nav Button
 /*----------------------------
 Question Container
 -----------------------------*/
+#quiz {
+    margin-top: 100px;
+}
+#quiz .quiz-question-card {
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
+  .welcome-card {
+    background: url(../img/cardbackground.jpg);
+    max-width: 600px;
+    min-height: 120px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.question-title {
+    padding-bottom: 10px;
+}
 /*----------------------------
 Questions
 -----------------------------*/
