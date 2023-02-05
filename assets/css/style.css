@@ -87,6 +87,8 @@ Question Container
     min-height: 120px;
     border-radius: 30px;
     text-align: center;
+    border: #f8b344 solid 3px;
+    border-style: outset;
 }
 
 .question-title {
