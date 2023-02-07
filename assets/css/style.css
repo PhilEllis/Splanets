@@ -103,6 +103,12 @@ Questions
     max-width: 50%;
     object-fit: contain;
 }
+
+#answer-btns img:hover {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
 /*-----------------------------
 Progress Bar
 ------------------------------*/

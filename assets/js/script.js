@@ -1,5 +1,3 @@
-//Disable submit on video & replace video with quiz
-
 // Splanets Quiz Questions, answers options, correct answer and image links 
 let answer1 = document.getElementById("img1");
 let answer2 = document.getElementById("img2");
@@ -139,6 +137,15 @@ for (let i = 0; i < answerImages.length; i++) {
       displayQuestion();
     } else {
       document.querySelector("#score").innerHTML = "Your final score is " + score + " out of 10";
+	  if (score <= 9) {
+        setTimeout(function() {
+          window.location.href = "retry.html";
+        }, 5000);
+      } else {
+        setTimeout(function() {
+          window.location.href = "next.html";
+        }, 5000);
+      }
     }
   });
 }
@@ -150,7 +157,5 @@ displayQuestion();
 
 //Progress Bar
 
-
-//Disable submit on video & replace video with quiz
 
 
