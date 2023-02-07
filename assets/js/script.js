@@ -1,21 +1,12 @@
-// Splanets Quiz Questions, answers options, correct answer and image links 
-var answers = [
-	"assets/img/mercury.png",
-	"assets/img/venus.png",
-	"assets/img/earth.png",
-	"assets/img/mars.png",
-	"assets/img/jupiter.png",
-	"assets/img/saturn.png",
-	"assets/img/uranus.png",
-	"assets/img/neptune.png"
-  ];
+//Disable submit on video & replace video with quiz
 
+// Splanets Quiz Questions, answers options, correct answer and image links 
 let answer1 = document.getElementById("img1");
 let answer2 = document.getElementById("img2");
 let answer3 = document.getElementById("img3");
 let answer4 = document.getElementById("img4");
 
-
+let answerImages = [answer1, answer2, answer3, answer4];
 
 let spQuiz = [
     {
@@ -131,47 +122,38 @@ function displayQuestion () {
 	answer3.setAttribute("src", answers[2]);
 	answer4.setAttribute("src", answers[3]);
     for (let i = 0; i < answers.length; i++) {
-        let answer = ans
-		wers[i];
-        let img = document.createElement("img");
-        img.src = answer;
-        img.onclick = function() {
-            checkAnswer(i);
-        };
-        document.getElementById("answer-btns").appendChild(img);
+        let answer = answers[i];
     } 
 }
 
-//Next button
+//Event listener for answer, answer check & Score
+let score = 0;
 
-//Results Restart or Launch Rocket
-let result = 0;
-
-function checkAnswer(answer) {
-  let question = spQuiz[newQuestion];
-  if (answer === question.correctAnswer) {
-    result++;
-    alert("Correct!");
-  } else {
-    alert("Incorrect.");
-  }
-  newQuestion++;
-  if (newQuestion === spQuiz.length) {
-    displayResult();
-  } else {
-    displayQuestion();
-  }
+for (let i = 0; i < answerImages.length; i++) {
+  answerImages[i].addEventListener("click", function() {
+    if (String(i) === spQuiz[newQuestion].correctAnswer) {
+      score++;
+      alert("Correct! Your score is " + score + ".");
+    } else {
+      alert("Incorrect. The correct answer is " + spQuiz[newQuestion].answers[spQuiz[newQuestion].correctAnswer] + ". Your score is " + score + ".");
+    }
+    newQuestion++;
+    if (newQuestion < spQuiz.length) {
+      displayQuestion();
+    } else {
+      alert("You have reached the end of the quiz. Your final score is " + score + ".");
+    }
+  });
 }
 
-function displayResult() {
-	alert(`You got ${result} out of ${spQuiz.length} questions correct.`);
-  }
-//Call Quiz
 
+//Results Restart or Launch Rocket
+
+//Call Quiz
 displayQuestion();
+
 //Progress Bar
 
-//Event listen on clicks to keep it enlarged
 
 //Disable submit on video & replace video with quiz
 
