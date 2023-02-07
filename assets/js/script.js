@@ -128,14 +128,10 @@ function displayQuestion () {
 
 //Event listener for answer, answer check & Score
 let score = 0;
-
 for (let i = 0; i < answerImages.length; i++) {
   answerImages[i].addEventListener("click", function() {
     if (String(i) === spQuiz[newQuestion].correctAnswer) {
       score++;
-      alert("Correct! Your score is " + score + ".");
-    } else {
-      alert("Incorrect. The correct answer is " + spQuiz[newQuestion].answers[spQuiz[newQuestion].correctAnswer] + ". Your score is " + score + ".");
     }
     newQuestion++;
     if (newQuestion < spQuiz.length) {

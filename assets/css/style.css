@@ -98,8 +98,10 @@ Question Container
 Questions
 -----------------------------*/
 #answer-btns img {
-    max-width: 50%;
+    
     margin-top: 30px;
+    max-width: 50%;
+    object-fit: contain;
 }
 /*-----------------------------
 Progress Bar
@@ -108,12 +110,7 @@ Progress Bar
 /*------------------------------
 Score Announcement
 -------------------------------*/
-  .alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: blue
-    text-align: center;
-  }
+
 /*-------------------------------
 Leader Board
 -------------------------------*/
