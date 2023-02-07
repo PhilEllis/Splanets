@@ -128,6 +128,7 @@ function displayQuestion () {
 
 //Event listener for answer, answer check & Score
 let score = 0;
+
 for (let i = 0; i < answerImages.length; i++) {
   answerImages[i].addEventListener("click", function() {
     if (String(i) === spQuiz[newQuestion].correctAnswer) {
@@ -137,11 +138,10 @@ for (let i = 0; i < answerImages.length; i++) {
     if (newQuestion < spQuiz.length) {
       displayQuestion();
     } else {
-      alert("You have reached the end of the quiz. Your final score is " + score + ".");
+      document.querySelector("#score").innerHTML = "Your final score is " + score + " out of 10";
     }
   });
 }
-
 
 //Results Restart or Launch Rocket
 
