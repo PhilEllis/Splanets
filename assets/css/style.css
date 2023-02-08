@@ -15,25 +15,35 @@ body {
     background-size: cover;
     position: relative;
     width: 100%;
+    height: 170vh;
+}
+
+#bg-rocketstationary {
+    background: url("../img/stationaryrocket1040.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
     height: 100vh;
 }
 /*----------------------------
 Header - Nav
 ----------------------------*/
 
-.navbar-toggler-icon {
-    color: #4fb2e5;
-}
 .navbar-toggler {
-    color: #4fb2e5;
-}
-.navbar-toggler-icon {
     color: #4fb2e5;
 }
 
 .logo {
     transform: translate(-40px);
     max-height: 130px;
+}
+
+.navbar-nav .nav-link {
+    color: #4fb2e5;
+}
+
+.navbar-nav a {
+    color: #4fb2e5;
 }
 /*----------------------------
 Hero
@@ -58,7 +68,13 @@ Video
 /*----------------------------
 Start Button
 ----------------------------*/
-
+.play-btn {
+    background: linear-gradient(to bottom right, rgb(219, 80, 201), rgba(141, 118, 182, 0.5), rgba(78, 184, 184, 1), rgba(98, 188, 86, 0.5), rgba(145, 200, 80, 1));
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
 /*----------------------------
 Nav Button
 ----------------------------*/
@@ -94,13 +110,25 @@ Question Container
 .question-title {
     padding-bottom: 10px;
 }
+
+#intro .intro-card {
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 /*----------------------------
 Questions
 -----------------------------*/
 #answer-btns img {
     
     margin-top: 30px;
-    max-width: 50%;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -128,7 +156,28 @@ Leader Board Submission
 /*-------------------------------
 Try Again 
 --------------------------------*/
+.retrycard {
+    background-color: rgba(255, 252, 245, 0.7);
+    margin-top: 80px;
+    margin-left: 50px;
+    border-color: #fff;
+}
 
+.rewatch-btn {
+    background: rgba(78, 184, 184, 1);
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
+
+.replay-btn {
+    background: rgba(86, 173, 224, 1);
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
 /*--------------------------------
 Winner Rocket Luanch
 --------------------------------*/
