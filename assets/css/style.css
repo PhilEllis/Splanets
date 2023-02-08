@@ -69,7 +69,15 @@ Video
 Start Button
 ----------------------------*/
 .play-btn {
-    background: linear-gradient(to bottom right, rgb(219, 80, 201), rgba(141, 118, 182, 0.5), rgba(78, 184, 184, 1), rgba(98, 188, 86, 0.5), rgba(145, 200, 80, 1));
+    background: rgba(78, 184, 184, 1);
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
+
+.play-btn:hover {
+    background: rgb(63, 151, 151);
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
@@ -171,8 +179,24 @@ Try Again
     text-shadow: #111e4b;
 }
 
+.rewatch-btn:hover {
+    background: rgb(63, 151, 151);;
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
+
 .replay-btn {
     background: rgba(86, 173, 224, 1);
+    color: #fff;
+    border-color: #111e4b;
+    margin-top: 20px;
+    text-shadow: #111e4b;
+}
+
+.replay-btn:hover {
+    background: rgb(66, 148, 195);
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;

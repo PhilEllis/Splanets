@@ -139,12 +139,12 @@ for (let i = 0; i < answerImages.length; i++) {
       document.querySelector("#score").innerHTML = "Your final score is " + score + " out of 10";
 	  if (score <= 9) {
         setTimeout(function() {
-          window.location.href = "retry.html";
-        }, 5000);
+          window.location.href = "tryagain.html";
+        }, 2000);
       } else {
         setTimeout(function() {
-          window.location.href = "next.html";
-        }, 5000);
+          window.location.href = "rocketlaunch.html";
+        }, 2000);
       }
     }
   });
