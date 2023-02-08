@@ -31,6 +31,7 @@ Header - Nav
 
 .navbar-toggler {
     color: #4fb2e5;
+    background-color: rgba(79, 178, 229, 0.5);
 }
 
 .logo {
@@ -205,3 +206,30 @@ Try Again
 /*--------------------------------
 Winner Rocket Luanch
 --------------------------------*/
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.rocket-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.logo .rocket-logo {
+    transform: translate(-40px);
+    max-height: 130px;
+    z-index: 1;
+}

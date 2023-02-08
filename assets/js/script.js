@@ -150,12 +150,23 @@ for (let i = 0; i < answerImages.length; i++) {
   });
 }
 
+//correct & incorrect alert
+let result = document.getElementById("result");
+
+answerImages.forEach(function(answer, index) {
+  answer.addEventListener("click", function() {
+	if (index == question.correctAnswer) {
+      result.innerHTML = "Correct";
+    } else {
+      result.innerHTML = "Incorrect";
+    }
+  });
+});
 //Results Restart or Launch Rocket
 
 //Call Quiz
 displayQuestion();
 
-//Progress Bar
 
 
 
