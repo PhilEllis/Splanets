@@ -6,6 +6,8 @@ let answer4 = document.getElementById("img4");
 
 let answerImages = [answer1, answer2, answer3, answer4];
 
+let question = '';
+
 let spQuiz = [
     {
         question: "What planet is closest to the Sun?",
@@ -112,7 +114,7 @@ let spQuiz = [
 // Function to show Question and possible answers
 let newQuestion = 0;
 function displayQuestion () {
-    let question = spQuiz[newQuestion];
+    question = spQuiz[newQuestion];
     document.getElementById("question-text").innerHTML = question.question;
 	let answers = question.answers;
 	answer1.setAttribute("src", answers[0]);
@@ -127,9 +129,23 @@ function displayQuestion () {
 //Event listener for answer, answer check & Score
 let score = 0;
 
+//Call Quiz
+displayQuestion();
+
+//correct & incorrect alert
+let result = document.getElementById("result");
+
 for (let i = 0; i < answerImages.length; i++) {
   answerImages[i].addEventListener("click", function() {
-    if (String(i) === spQuiz[newQuestion].correctAnswer) {
+    if (i == parseInt(question.correctAnswer)) {
+		result.innerHTML = "Correct";
+	  } else {
+		result.innerHTML = "Incorrect";
+	  } 
+	  setTimeout(function() {
+		result.innerHTML = "";
+	  }, 1000);
+	if (String(i) === spQuiz[newQuestion].correctAnswer) {
       score++;
     }
     newQuestion++;
@@ -150,22 +166,11 @@ for (let i = 0; i < answerImages.length; i++) {
   });
 }
 
-//correct & incorrect alert
-let result = document.getElementById("result");
-
-answerImages.forEach(function(answer, index) {
-  answer.addEventListener("click", function() {
-	if (index == question.correctAnswer) {
-      result.innerHTML = "Correct";
-    } else {
-      result.innerHTML = "Incorrect";
-    }
-  });
-});
-//Results Restart or Launch Rocket
-
 //Call Quiz
 displayQuestion();
+
+
+
 
 
 
