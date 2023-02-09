@@ -136,7 +136,7 @@ The target audience will be Children aged 6-12 years. The quiz format should ref
 - **Footer**
     - There is no footer as this was felt to be unnecessary considering the one page nature of the site design.
     
-    
+
 
 ### Specific to Pages
 -  **Index**
@@ -308,11 +308,11 @@ There are no identified bugs at present. I am not fully happy with the solution 
 
 ## Bugs & challenges experienced during the build
 
-- Initial challenge with the JavaScript code during this build was building the question in the correct manner that the correct 4 images would appear below the quiz and operate as the buttons. This required me to play about with the initial format of the question and answer.
+- The Initial challenge with the JavaScript code during this build was building the question in the correct manner so that the correct 4 images would appear below the quiz and operate as the buttons. This required me to play about with the initial format of the question and answer.
 - I initially opted to use the appendChild approach to place the four linked image answers under the question. This appeared to work despite the images not loading. After resolving the relative file paths the images loaded and were clickable.
-- The next issue came as you progressed through the quiz the answer images did not clear. This left the user with 10 sets of 4 image options by the end of the quiz. To tackle this i after discussing it with a tutor changled the empty div to 4 img elements assigned them with their answer id's and used document.getElementById to target the answer to each img and defined answerImages and added the setAttribute to the displayQuestion function.
-- In doing the last step the eventListener had been deleted and so the quiz became unresponsive. I added the event listener within the results if statement, tracking the correct and incorrect answers this displayed via the automatic javascript alert which needed to be dismissed. Once a score could be calculated i directed 9/10< to an html document that would display try again and for scores of 10/10 directed to an html document that will display the animation. The automatic alerts feature was removed as it did not facilitate a good user experience. I added in a correct and incorrect message to be added to the innerHtml of the question which showed under the next question being asked. This was confusing for the user as the messaged stayed under the question, so i added a setTimeout function and limited the correct/incorrect message visibility to 1s. I set another setTimeout function once the scores were calculated so that the user had time to see and digest their score before being redirected to the next page. 
-- During the changes to the functions the answers started to display as all incorrect. Using line breaks within the developers console i discovered the null results showing when images were clicked leading me to implementing parseInt within the function in order to extract a number from the answers string.
+- The next issue came as you progressed through the quiz the answer images did not clear. This left the user with 10 sets of 4 image options by the end of the quiz. To tackle this I, after discussing it with a tutor changed the empty div to 4 img elements. Assigned them with their answer id's and used document.getElementById to target the answer to each img, defined answerImages and added the setAttribute to the displayQuestion function.
+- In doing the last step the eventListener had been deleted and so the quiz became unresponsive. I added the eventListener within the results if statement, tracking the correct and incorrect answers. The alerts displayed automatically via the javascript alert which needed to be dismissed. Once a score could be calculated i directed 9/10 or less than scores to an html document that would display try again and for scores of 10/10 the user is directed to an html document that will display the animation. The automatic alerts feature was removed as it did not facilitate a good user experience. I added in a correct and incorrect message to the innerHtml of the question card which showed under the next question being asked. This was confusing for the user as the message stayed under the question, so i added a setTimeout function and limited the correct/incorrect message visibility to 1s. I set another setTimeout function once the scores were calculated so that the user had time to see and digest their score before being redirected to the next page. 
+- During the changes to the functions the answers started to all display as incorrect. Using line breaks within the developers console i discovered the null results showed when images were clicked leading me to implementing parseInt within the function in order to extract a number from the answers string.
 
 <a name="credits"></a>
 ## Credits
