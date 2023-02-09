@@ -1,9 +1,9 @@
 <h1 align="center">Splanets- Beta Test Site</h1>
-<h1 align="center"><img src="./assets/images/readmeimg/MothersSpinesResponsiveDesign.png" /></h1>
+<h1 align="center"><img src="assets/img/readmeimg/splanetslivepreview.png" /></h1>
 
-<a href="https://philellis.github.io/milestone-project-1/"><img src="assets/img/splanetslogo.png" width="30px" /></a> Live website
+<a href="https://philellis.github.io/Splanets/"><img src="assets/img/splanetslogo.png" width="30px" /></a> Live website
 
-<a href="https://github.com/PhilEllis/milestone-project-1"><img src="assets/img/readmeimg/GitHub.png" width="30px" /></a> GitHub Repository
+<a href="https://github.com/PhilEllis/Splanets"><img src="assets/img/readmeimg/GitHub.png" width="30px" /></a> GitHub Repository
 
 ## About
 
@@ -259,15 +259,16 @@ This website was published using [GitHub Pages](https://pages.github.com/). The 
 1. Go to the GitHub website and log in.
 2. On the left-hand side, you'll see all your repositories, select the appropriate one. ([Repository](https://github.com/liigalized/MS1_boredom_guide) used for this project).
 3. Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
-4. Scroll down till you see 'GitHub Pages' heading.
-5. Under the 'Source' click on the dropdown and select 'master branch'
-6. The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
-7. It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
+4. Scroll down till you see 'Pages' option on the left hand side.
+5. Under "Source" click “deploy from branch” change the "None" dropdown under branch to "main" keep selected folder to “root”
+6. Click "Save"
+7. The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
+8. It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
 
 ### Forking
 If you wish to contribute to this website you can Fork it without affecting the main branch by following the procedure outlined below.
 1. Go to the GitHub website and log in.
-2. Locate the [Repository](https://github.com/liigalized/MS1_boredom_guide) used for this project.
+2. Locate the [Repository](https://github.com/PhilEllis/Splanets) used for this project.
 3. On the right-hand side of the Repository name, you'll see the 'Fork' button. It's located next to the 'Star' and 'Watch' buttons.
 4. This will create a copy in your personal repository.
 5. Once you're finished making changes you can locate the 'New Pull Request' button just above the file listing in the original repository.
@@ -275,7 +276,7 @@ If you wish to contribute to this website you can Fork it without affecting the 
 ### Cloning 
 If you wish to clone or download this repository to your local device you can follow the procedure outlined below.
 1. Go to the GitHub website and log in.
-2. Locate the [Repository](https://github.com/liigalized/MS1_boredom_guide) used for this project.
+2. Locate the [Repository](https://github.com/PhilEllis/Splanets) used for this project.
 3. Under the Repository name locate 'Clone or Download' button in green.
 4. To clone the repository using HTTPS click the link under "Clone with HTTPS".
 5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
