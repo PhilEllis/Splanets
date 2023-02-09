@@ -74,10 +74,6 @@ Hero
   }
 
 /*----------------------------
-Video
-----------------------------*/
-
-/*----------------------------
 Start Button
 ----------------------------*/
 .play-btn {
@@ -85,7 +81,6 @@ Start Button
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
 
@@ -94,12 +89,8 @@ Start Button
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
-/*----------------------------
-Nav Button
-----------------------------*/
 
 /*----------------------------
 Question Container
@@ -161,21 +152,6 @@ Questions
     transition: transform 150ms;
     transform: scale(1.03);
 }
-/*-----------------------------
-Progress Bar
-------------------------------*/
-
-/*------------------------------
-Score Announcement
--------------------------------*/
-
-/*-------------------------------
-Leader Board
--------------------------------*/
-
-/*-------------------------------
-Leader Board Submission
--------------------------------*/
 
 /*-------------------------------
 Try Again 
@@ -192,7 +168,6 @@ Try Again
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
 
@@ -201,7 +176,6 @@ Try Again
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
 
@@ -210,7 +184,6 @@ Try Again
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
 
@@ -219,7 +192,6 @@ Try Again
     color: #fff;
     border-color: #111e4b;
     margin-top: 20px;
-    text-shadow: #111e4b;
     font-family: 'Play', sans-serif;
 }
 /*--------------------------------
