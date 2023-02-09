@@ -185,7 +185,7 @@ The target audience will be Children aged 6-12 years. The quiz format should ref
      - [Galaxy Background](https://www.istockphoto.com/vector/space-background-with-realistic-nebula-and-shining-stars-colorful-cosmos-with-gm1173451503-325938376) image by Egor Suvorov from Istock
      - [Planet Vectors](https://www.istockphoto.com/vector/glossy-planets-vector-set-gm453780213-30624312) Vector image by andegro4ka from Istock
      - [Rocket Animation](https://www.istockphoto.com/video/ship-rocket-launch-startup-new-business-project-new-business-project-concept-vehicle-gm1249549420-364189430) created by Zozulinskyi from Istock
-     
+- [youtube](https://www.youtube.com/watch?v=mQrlgH97v94) The Planet Song - 8 Planets of the Solar System Song for Kids | KidsLearningTube on Youtube 
 - [Fiver](https://www.fiverr.com/gemmawilson?source=inbox) Logo png files and favicon created by Gemma Wilson
 - [Figma](https://www.figma.com/file/ladBUkKqWA50bv0xDRaMUH/SPLANETS?node-id=0%3A1&t=rRbFBuY40vnsdoR4-1) used to create mock up designs
 - [Balsamiq](https://balsamiq.com/wireframes/desktop/) Used to create the initial wireframes
@@ -215,12 +215,13 @@ http://jigsaw.w3.org/css-validator/validator$link
 - Tryagain - Document checking completed. No errors or warnings to show.
 - Rocketlaunch - Document checking completed. No errors or warnings to show.
 
+### Javascript validator
+
 ### External testing
 - All testers confirmed that all buttons and navigation links performed the correct function. 
-- The testers provided feedback on the opacity used on the cards within the home page stating that the opacity was such that the text was hard to read. The opacity was increased an re-tested by the users who were satisfied that the text was now clearly readable.
-- Initially the about page contained one card with all of the about information. The feedback from users was that this was hard to read all together and due to the responsive element and amount of text the text size was quite small. This was tackled by breaking the content over two responsive horizontal cards and increasing the font size. This received better feedback from the users saying it was easier to read and digest.
-- Testers on tablets and mobiles identified that the images added via media query had negative space above the hero image and navigation. This was corrected by adding all of the css styling to the medi query and not just stipulating the image change.
-- During the testing process a gutter along the entire right side of the site pages was discovered. I identified an area within the footer to be responsible with a css style rule targeting the padding of a row. This was removed and all gutters disapeared. 
+- The testers provided feedback on being able to click the buttons area not just on the circular planet. This is due to the images being square png files with a transparent background. 
+- Testers on tablets and mobiles identified that the background image was not extending or stretching down responsively with the change in button layouts. This caused issues in the fact that the white writing under the planets disappeared against the white background. 
+- During the testing process it was discovered that the animation was not fully visible to it maximum effect. 
 
 ### Compatibility Testing
 - Browser Compatibility tested via [Browser Stack](https://live.browserstack.com/) 
@@ -285,7 +286,7 @@ If you wish to clone or download this repository to your local device you can fo
 <a name="bugs"></a>
 ## Known Bugs
 
-There are no identified bugs at present. The text size and responsiveness has been the most temperomental element within this design and i would, if starting again change the opauqe overlay behind the jumbotron text and over the Hero image to a responsive div that would contain the text through all devices and screen sizes rather than a static overlay contained within the image. Sadly once i had realised this there was not enough time to reverse the design before submission but i will take this lesson on to the next project. 
+There are no identified bugs at present. I am not fully happy with the solution to the background image not stretching the background as i feel there must be a better was of adapting other than setting the vh to the current setting. I utilised every potential varient i could think of so this is something i would look to refine before passing this to a client. I would also potentially add a media query implimenting a cut down video for mobile views so that the rocket can be fully appreciated. I however do not posess the video editing skills to make this happen.
 
 <a name="credits"></a>
 ## Credits
@@ -293,22 +294,26 @@ There are no identified bugs at present. The text size and responsiveness has be
 ### Code 
 
 - The majority of the code originated from the Bootstrap library and was styled with custom css.
-- Hover elements inspired and adapted from [30 seconds of code](https://www.30secondsofcode.org/css/s/hover-underline-animation )
-- The following code snippets were copied with permision;
-- Tutor Support helping me to identify an issue with the Navbar not appearing transparent initially;
-Tutor Sean
-nav {
- width: 100%;
+- I reffered alot to W3School JavaScript tutorials https://www.w3schools.com/js/default.asp to help better understand and construct my JS.
+- I watched a lot of quiz tutorials in order to better understand the process including the following;
+https://www.youtube.com/watch?v=MxrGPP4F8Sc
+https://www.youtube.com/watch?v=f4fB9Xg2JEY
+- The only similar quiz i could find to the one i wanted to create was this which served as inspiration;
+https://www.sanwebcorner.com/2021/04/picture-quiz-using-javascript.html
+- I used stack overflow to search for similar problems and looked through the answers and possible solutions to help suggest where i was going wrong. 
+- I posted in slack regarding the error in question not being defined and user Bob Bobton pointed out that i had only defined it for one function. Defining globally and outside of the function would help to solve the issue which it did.
+- The following code was suggested by Slack user AR Riyad to assist with making the logo responsive on the rocket launch page
+.fullscreen-video {
+    z-index: -1;
 }
 
-ul .nav {
- flex: 1,
- justify-content: flex-end;
+.rocket-overlay {
+    z-index: -2;
 }
-- The following code was suggested by Slack user to assist with removing the logo from the toggle menu;
-Slack User isherwood
-d-sm-block d-none
 
+.logo .rocket-logo {
+    z-index: 1;
+}
 - All of the rest of the code was written by the author - Philippa Ellis
 
 
