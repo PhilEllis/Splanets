@@ -84,7 +84,7 @@ let spQuiz = [
 		answers: [
 			"assets/img/venus.png",
 			"assets/img/saturn.png",
-			"assets/img/uranus.png",
+			"assets/img/earth.png",
 			"assets/img/jupiter.png"
 		],
 		correctAnswer: '1'
