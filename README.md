@@ -58,9 +58,9 @@ The target audience will be Children aged 6-12 years. The quiz format should ref
     
 ### User Stories - Business Owner
 - #### I am a business owner currently wishing to test the concept of an app that intends to help children enhance their memory retention and improve their understanding of certain subjects like the solar system when watching educational videos by using fun and engaging multiple question quizes.
-    1. I want to test the concept to see if it is well received by the target audience. 
     1. I need the product to be fun and engaging to encourage repeat plays and encourage users to want more i.e. progress to the next level of learning. 
     1. I need the product to be simple enough for children of age 6-12 to utilise it. 
+    1. I need it to be optimised for tablet screens as this is how it will mainly be tested.
 
 ### Design Choices
 
@@ -154,6 +154,7 @@ The target audience will be Children aged 6-12 years. The quiz format should ref
 
 ### Features to be implemented to improve service
 - A timed disable of the start button to ensure that users watch the full video before commencing the quiz. This would be coupled by a smaller link button underneath for those who have watched it and dont want to wait.
+- The option to play the question in audio for younger children with more limited reading abilities and additioal features that would assist to improve the access of the quiz and its answers to those with limited sight.
 - A progress bar under the image answers to provide the player with a guide of how many questions left. I feel this would be an important addition especially for children who may loose attention if they feel something is hard.
 - Change the incorrect and correct messaged and instead make it more visceral with an animated response of the planet shaking or a green tick or cross appearing over the chosen image. I feel this would provide a better learning experience for the child.
 - A leader board to be implemented for those who score 10/10. This would be a leader board based on who completed the quiz the fastest and would only retain the top 5 speeds. I feel this would encourage children to keep trying the quiz once they had hit 10/10 and to keep coming back to revisit and reclaim their position on the leaderboard.
@@ -216,12 +217,27 @@ http://jigsaw.w3.org/css-validator/validator$link
 - Rocketlaunch - Document checking completed. No errors or warnings to show.
 
 ### Javascript validator
+- https://jshint.com/ used the test has shown the following data;
+- Metrics
+  There are 5 functions in this file.
+  Function with the largest signature take 0 arguments, while the median is 0.
+  Largest function has 13 statements in it, while the median is 1.
+  The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+  One warning
+  * 150	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (i, question, result, spQuiz, newQuestion, score, displayQuestion)
+  * One unused variable
+  136	answer
+
+### Lighthouse testing
+- <img src="assets/img/readmeimg/indexlighthousetest.png"/>
+- further work and research required to improve the best practices
+- <img src="assets/img/readmeimg/gamelighthousetest.png" />
 
 ### External testing
 - All testers confirmed that all buttons and navigation links performed the correct function. 
 - The testers provided feedback on being able to click the buttons area not just on the circular planet. This is due to the images being square png files with a transparent background. 
 - Testers on tablets and mobiles identified that the background image was not extending or stretching down responsively with the change in button layouts. This caused issues in the fact that the white writing under the planets disappeared against the white background. 
-- During the testing process it was discovered that the animation was not fully visible to it maximum effect. 
+- During the testing process it was discovered that the animation was not fully visible to it maximum effect on smaller devices. 
 
 ### Compatibility Testing
 - Browser Compatibility tested via [Browser Stack](https://live.browserstack.com/) 
@@ -234,21 +250,20 @@ http://jigsaw.w3.org/css-validator/validator$link
 - The site has mostly been built and tested on a Macbook Air operating on MacOs Catalina.
 
 ### Performance Testing
--  The performance of the site was tested on the following site with satisfactory results. [Web Page Test](hhttps://www.webpagetest.org/result/221027_BiDcTE_26K/)
+-  The performance of the site was tested on the following site with satisfactory results. [Web Page Test](https://www.webpagetest.org)
 
 
 ### Testing User Stories 
 ### User Stories - Customer
-- I feel that the user stories of all three avatars are mirror the same core principles. A simple design with imagery that is reflective of them. Clear snippets of information that are easy to digest. A simple layout with quicklinks to the purpose of the site sign up, meaning users can navigate with ease. The hero images and jumbotron content allow the user to instantly identify the page they are on and redirect themselves with ease from the top or bottom Nav. The about page provides enough additional information to make an informed choice on sign up without being overwhelming. The contact page allows the oportunity to connect further with the brand. The imagery, font and colours have acheived a clean warm design that feels welcoming to its users.
+- The initial wire frame suggested that that the test would watch the video and navigate through the quiz to be assigned a planet related to their score. "You are Venus get 2 more right to reach the sun" with climbing the ranks from furthest away from the sun to full marks meaning you made it to the sun. reviewing the age range and the user stories it was clear that this was too complex and conveluted an end goal and also not very fun for them. Fun and engaging is key to hold attention therefore we implemented the rocket launch anuimation at 10/10 and would make leader boards be around the speed of completing the quiz at full marks in order to encourage repeat play, hold their attention and improve their knowledge.
+The imagery used is fun, engaging and immersive. It is important to note caution for accessibility of text due to the imagery and colours and additional features need to be simple and checked for appropriate contrast levels. Writing and instructions have been kept to a bare minimum without compromising the information delivered to make sure children can play indipendently.
+The answer options have been limited to 4 per question despite 8 planets being available in order to not overwhlem the child with options but also to provide a cleaner more minimal page which will enhance the user experinece for children. The answer options have been created and styled to be in the most instantly identifiable form allowing children to play independently of all levels of ability. Even if a parent has to read the question the child will feel a sense of control and independence being able to confidently make the selections on their own. This should again increase engagemnt, hold attention and hopefully as a result increase their knowledge.
+Navigation is simple and consistent mostly being controlled from the center panel by the child but additional links provided to get back to the quiz or video.
 
 
 ### User Stories - Business Owner
-- The emphasis within the site is the email sign up, every button within the jumbotrons all link directly to this allowing a resistance free path for the user to sign up after landing on the pages.
-- The sign up form accomdates for Name and with the addition of radio buttons for users to select their user avatar - informing the business and allowing them to target specific marketing messages to that individual.
-- The Brand created is warm, clean, light and far away from gimmicky colours and other brands that they wanted to stay away from. 
-- The content within the site is conversational and sets a supportive you are being heard and seen tone to the site.
-- The contact page allows the customers direct access to the brand. This will also capture the avatar information and allow them to customise their response.
-- Social links are provided within the footer to allow the brand to grow their social media. These links have been kept small and at the bottom as the current focus of the site is sign ups and larger social media links may distract the user away from the site before signing up.
+- This Beta product fulfills the brief of playing the educational video about our solar system. The quiz is then presented to children in a fun and engaging manner with a simple enough layout and design that children within the age bracket 6-8 are able to play independently. 
+- I have tested the quiz on 8, 10 and 12 year olds and all wanted to play again to see if they could improve their score and see the rocket launch. The second and thirds plays vastly improved their score meaning the retention of information was increasing. I noted that playing also encouraged them to share other facts about the solar system that they already knew. I feel this shows that the format created works to fulfill the clients brief. 
 
 
 <a name="deployment"></a>
